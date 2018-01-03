@@ -2,7 +2,7 @@ Gson JBoss Module
 =================
 
 Packaging of [Gson](https://github.com/google/gson) as
-a [JBoss Module](https://docs.jboss.org/author/display/MODULES/Home).
+a [JBoss Module](https://jboss-modules.github.io/jboss-modules/manual/).
 
 Historically the Hibernate Search project has been releasing such modules,
 for convenience of Hibernate Search users running applications on WildFly or JBoss EAP.

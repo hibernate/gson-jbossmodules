@@ -34,7 +34,7 @@ An example version could be `5.6.4.hibernate02` to contain Gson version `5.6.4`.
 ## Download
 
 Released module ZIPs are available on [JBoss Nexus](https://repository.jboss.org/nexus/index.html#welcome)
-and Maven Central as `org.hibernate.gson-jbossmodules:gson-jbossmodules:<version>:dist:zip`.
+and Maven Central as `org.hibernate.gson-jbossmodules:gson-jbossmodules:<version>:zip:dist`.
 
 Here is a link to the [parent directory containing all releases](https://repository.jboss.org/nexus/content/groups/public/org/hibernate/gson-jbossmodules/gson-jbossmodules/).
 

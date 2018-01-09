@@ -27,6 +27,7 @@
             <outputDirectory>com/google/code/gson/${version.gson}</outputDirectory>
             <useTransitiveFiltering>false</useTransitiveFiltering>
             <unpack>false</unpack>
+            <scope>provided</scope>
             <includes>
                 <include>com.google.code.gson:gson</include>
             </includes>

@@ -5,8 +5,8 @@
     <groupId>org.hibernate.gson-jbossmodules</groupId>
     <artifactId>gson-jbossmodules-parent</artifactId>
     <name>Gson JBoss Modules parent</name>
-    <url>https://github.com/hibernate/gson-jbossmodules</url> 
-    <description>Distribution of Gson packaged into JBoss Modules</description> 
+    <url>https://github.com/hibernate/gson-jbossmodules</url>
+    <description>Distribution of Gson packaged into JBoss Modules</description>
     <packaging>pom</packaging>
     <version>2.8.2-SNAPSHOT</version>
     <inceptionYear>2017</inceptionYear>
@@ -15,6 +15,7 @@
         <version.gson>2.8.2</version.gson>
         <!-- This should match the major.minor of the Gson version, optionally revisioned with module micro fixes -->
         <slot.simple.id>2.8</slot.simple.id>
+        <slot.full.id>${version.gson}</slot.full.id>
         <version.wildfly>11.0.0.Final</version.wildfly>
         <!-- Integration test dependencies; typically need to match WildFly version -->
         <version.arquillian>1.1.11.Final</version.arquillian>
@@ -91,11 +92,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>gson-jbossmodules</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${version.gson}</version>
@@ -148,13 +144,22 @@
                         <requireMavenVersion>
                             <version>3.5.0</version>
                         </requireMavenVersion>
-                        <DependencyConvergence />
                     </rules>
                 </configuration>
             </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.wildfly.build</groupId>
+                    <artifactId>wildfly-feature-pack-build-maven-plugin</artifactId>
+                    <version>1.2.5.Final</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.wildfly.build</groupId>
+                    <artifactId>wildfly-server-provisioning-maven-plugin</artifactId>
+                    <version>1.2.5.Final</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>

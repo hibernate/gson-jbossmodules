@@ -4,6 +4,6 @@
         <property name="jboss.api" value="private"/>
     </properties>
     <resources>
-        <resource-root path="gson-${version.gson}.jar" />
+        <artifact name="${com.google.code.gson:gson}" />
     </resources>
 </module>

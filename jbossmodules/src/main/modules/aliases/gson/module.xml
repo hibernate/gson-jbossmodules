@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module-alias xmlns="urn:jboss:module:1.1"
     name="com.google.code.gson" slot="${slot.simple.id}"
-    target-name="com.google.code.gson" target-slot="${version.gson}" />
+    target-name="com.google.code.gson" target-slot="${slot.full.id}" />

@@ -194,8 +194,8 @@
     </build>
 
     <modules>
-        <module>gson-jbossmodules</module>
-        <module>gson-jbossmodules-integrationtests</module>
+        <module>jbossmodules</module>
+        <module>integrationtests</module>
     </modules>
 
 </project>

@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.hibernate.gson-jbossmodules</groupId>
         <artifactId>gson-jbossmodules-parent</artifactId>
-        <version>2.8.2-SNAPSHOT</version>
+        <version>2.8.5-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 

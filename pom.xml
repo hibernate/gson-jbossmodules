@@ -12,7 +12,7 @@
     <inceptionYear>2017</inceptionYear>
 
     <properties>
-        <version.gson>2.8.5</version.gson>
+        <version.gson>2.8.9</version.gson>
         <!-- This should match the major.minor of the Gson version, optionally revisioned with module micro fixes -->
         <slot.simple.id>2.8</slot.simple.id>
         <slot.full.id>${version.gson}</slot.full.id>
